@@ -1509,9 +1509,9 @@
   (let [wall-thickness (get c :configuration-wall-thickness)]
   (key-position c 0 0 (map - (wall-locate2 wall-thickness 0  -1) [0 (/ mount-height 2) 0]))))
 (defn external-holder-position [c]
-  (map + [(+ 18.8 (external-holder-offset c)) 18.7 1.3] [(first (external-holder-ref c)) (second (external-holder-ref c)) 2]))
+  (map + [(+ 18 (external-holder-offset c)) 18.7 1.3] [(first (external-holder-ref c)) (second (external-holder-ref c)) 2]))
 (def external-holder-cube
-  (cube 29.166 30 12.6))
+  (cube 30.766 30 12.6))
 (defn external-holder-space [c]
   (translate (map + (external-holder-position c) [-1.5 (* -1 wall-thickness) 3]) external-holder-cube))
 

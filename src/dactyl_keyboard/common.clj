@@ -503,8 +503,8 @@
          (translate [0 0 (/ height 2)] (sphere top-radius))))
 
 (def screw-insert-height 3.8)
-(def screw-insert-bottom-radius (/ 5.31 2))
-(def screw-insert-top-radius (/ 5.1 2))
+(def screw-insert-bottom-radius (/ 4.6 2))
+(def screw-insert-top-radius (/ 4.4 2))
 
 (defn screw-insert-holes
   "TODO: doc.
@@ -519,8 +519,8 @@
    but basically it takes a function that places outer parts of screw holes with the following specs."
   [placement-function c]
   (placement-function c
-                      (+ screw-insert-bottom-radius 1.6)
-                      (+ screw-insert-top-radius 1.6)
+                      (+ screw-insert-bottom-radius 1.9)
+                      (+ screw-insert-top-radius 1.9)
                       (+ screw-insert-height 1.5)))
 (defn screw-insert-screw-holes
   "TODO: doc."
